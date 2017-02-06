@@ -11,5 +11,5 @@ services:
      - "22"
     ports:
      - "2223:22/tcp"
-    image: "presto"
+    image: "mpifrpsr/presto"
     command: "/usr/sbin/sshd -D"  
