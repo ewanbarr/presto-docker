@@ -72,7 +72,8 @@ RUN apt-get -y clean
 RUN pip install pip -U && \
     pip install setuptools -U && \
     pip install numpy -U && \
-    pip install scipy -U
+    pip install scipy -U && \
+    pip install matplotlib -U    
 
 #COPY sshd_config /etc/ssh/sshd_config
 USER psr
