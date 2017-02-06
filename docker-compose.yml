@@ -1,0 +1,15 @@
+version: '2'
+services:
+  presto:
+    build: .
+    container_name: presto
+    volumes:
+     - .:/data/
+     - "/var/run/docker.sock:/var/run/docker.sock"
+    hostname: localhost
+    expose:
+     - "22"
+    ports:
+     - "2223:22/tcp"
+    image: "presto"
+    command: "/usr/sbin/sshd -D"  
