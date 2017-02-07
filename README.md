@@ -16,7 +16,7 @@ Building from Dockerfile
 If you wish to build directly from this repo, pull it and run the following:
 
 <pre><code>
-docker build -t <desired name for image> .
+docker build -t "desired name for image" .
 </code></pre>
 
 The container can then be accessed in the normal ways.
