@@ -37,7 +37,7 @@ This will call <pre><code>docker-compose -f docker-compose.yml up -d</code></pre
 Using the container with SSH
 ----------------------------
 
-As noted above, the image comes with an OpenSSH server and X11 forwarding enabled. To use this from your machine effectively, it is recommended that you apped the contents of the **ssh.cfg** file into your **~/.ssh/config** file. This will allways enable X11 forwarding and will ensure that your authorized hosts list does not become invalidated on restart of a container.
+As noted above, the image comes with an OpenSSH server and X11 forwarding enabled. To use this from your machine effectively, it is recommended that you append the contents of the **ssh.cfg** file into your **~/.ssh/config** file. This will allways enable X11 forwarding and will ensure that your authorized hosts list does not become invalidated on restart of a container.
 
 
 
