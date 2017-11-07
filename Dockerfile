@@ -116,8 +116,6 @@ RUN ./prepare && \
     ./configure --prefix=$PSRHOME/tempo && \
     make && \
     make install && \
-    mv obsys.dat obsys.dat_ORIGINAL && \
-    wget https://raw.githubusercontent.com/mserylak/pulsar_docker/master/tempo/obsys.dat && \
     rm -rf .git
 
 # pyslalib
@@ -139,8 +137,6 @@ RUN rm -rf ../.git
 RUN make prep && \
     make
 WORKDIR $PRESTO/python/ppgplot_src
-RUN mv _ppgplot.c _ppgplot.c_ORIGINAL && \
-    wget https://raw.githubusercontent.com/mserylak/pulsar_docker/master/ppgplot/_ppgplot.c
 WORKDIR $PRESTO/python
 RUN make && \
     echo "export PYTHONPATH=$PYTHONPATH:$PRESTO/lib/python" >> ~/.bashrc
